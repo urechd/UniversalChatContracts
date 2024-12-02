@@ -9,9 +9,4 @@ public class TextMessage
     [ProtoMember(2)] public Guid ChannelId { get; set; }
     [ProtoMember(3)] public Guid UserId { get; set; }
     [ProtoMember(4)] public string Text { get; set; } = null!;
-    
-    public override string ToString()
-    {
-        return $"{UserId}: {Text}";
-    }
 }
